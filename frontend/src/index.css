@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6ecf0;
+}
+/* Navbar */
+
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.navbar a {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar a:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navbar-brand > img {
+  display: inline-block;
+  width: 20px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+
+ul.nav.navbar-nav li {
+  margin: 0 0.5rem;
+}
+
+.onboarding > .navbar {
+  background-image: url("./images/nav-bg.png")
+}
+
+.home-hero {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+  text-align: center;
+  padding: 1rem;
+  background-position: center center;
+  background-size: cover; 
+  background-image: url("./images/signed-out-home.jpg");
+  color: #fff;
+  text-shadow: 0 0 9px #66757f;
+}
