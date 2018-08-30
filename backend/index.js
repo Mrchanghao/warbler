@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { loginRequired, ensureCorrectUser } = require('./middleware/auth.js');
+const db = require('./models');
 const PORT = 8081
 const errorHandler = require('./handlers/error.js');
 const authRouter = require('./routes/auth.js'); 

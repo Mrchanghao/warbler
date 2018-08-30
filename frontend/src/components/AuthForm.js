@@ -39,9 +39,10 @@ class AuthForm extends Component {
                     <div className='col-md-6'>
                         <form onSubmit={this.handleSubmit}>
                             <h2>{heading}</h2>
-                            {errors.message && <div className='alert alert-danger'>
-                                {errors.message}
-                            </div>}
+                                {errors.message && 
+                                <div className='alert alert-danger'>
+                                    {errors.message}
+                                </div>}
                             <label htmlFor='email'>Email:</label>
                             <input className='form-control' type='text' 
                             name='email'
@@ -52,6 +53,7 @@ class AuthForm extends Component {
                             <input className='form-control' type='password' 
                             name='password'
                             id='password'
+                            value={password}
                             onChange={this.handleChange}
                             />
                             {signUp && (
